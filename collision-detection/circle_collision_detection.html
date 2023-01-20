@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const circle1 = { x: 10, y: 10, radius: 300 }
+        const circle2 = { x: 500, y: 500, radius: 150 }
+
+        let dx = circle2.x - circle1.x
+        let dy = circle2.y - circle1.y
+        let distance = Math.sqrt(dx * dx + dy * dy)
+        let sumOfRadii = circle1.radius + circle2.radius
+
+        if (distance < sumOfRadii) {
+            // circles collide
+        } else if (distance === sumOfRadii) {
+            // circles are touching
+        } else {
+            // no collision
+        }
+    </script>
+
+</body>
+
+</html>
