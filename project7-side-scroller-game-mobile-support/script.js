@@ -14,7 +14,10 @@ addEventListener('load', function () {
     class InputHandler {
         constructor() {
             this.keys = []
-            // use javascript bind method or ES6 arrow function, lexical scoping
+            
+            // use javascript bind method or ES6 arrow function
+            // Arrow functions don't bind their own 'this', but they inherit the one
+            // from their parent score, this is called 'lexical scoping'
             window.addEventListener('keydown', (e) => {
                 if ((e.key === 'ArrowDown' ||
                     e.key === 'ArrowUp' ||
