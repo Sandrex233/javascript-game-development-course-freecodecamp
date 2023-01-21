@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: black;
 }
@@ -8,9 +14,21 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* fit for mobile screen */
+    max-width: 100%;
+    max-height: 100%;
     /* width: 500px;
     height: 900px; */
 }
 #playerImage, #backgroundImage, #enemyImage {
     display: none;
+}
+#fullScreenButton {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
